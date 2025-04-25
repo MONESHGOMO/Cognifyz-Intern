@@ -23,6 +23,8 @@ class TemperatureConversion {
                 System.out.println("Invalid unit! Please enter 'C' or 'F'.");
         }
 
+        input.close();
+
     }
 
     public static double celsiusToFahrenheit(float temperature) {
