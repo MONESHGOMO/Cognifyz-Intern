@@ -26,13 +26,13 @@ class StudentCalculator {
             grade_tracker[i] = grade_value;
         }
         
-        float average = getAverage(grade_tracker, student_name);
+        float average = getAverage(grade_tracker);
         String result = student_name + " " + "your grade average is " + " " + average;
         input.close();
         return result;
     }
 
-    public static float getAverage(int[] grade_tracker, String name) {
+    public static float getAverage(int[] grade_tracker) {
         
         int n=grade_tracker.length;
         if (n == 1) {
