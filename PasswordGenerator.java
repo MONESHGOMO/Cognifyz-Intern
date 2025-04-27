@@ -73,7 +73,7 @@ public class PasswordGenerator {
                     System.out.print("Enter the password length you want: ");
                     int passwordLength = USER_INPUT.nextInt();
                     String pattern = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()";
-                    StringBuilder sb = new StringBuilder();
+                    StringBuilder sb = new StringBuilder();  // why StringBuilder because it is faster when compared to StringBuffer
                     for (int i = 0; i < passwordLength; i++) {
                         int index = random.nextInt(pattern.length());
                         sb.append(pattern.charAt(index));
