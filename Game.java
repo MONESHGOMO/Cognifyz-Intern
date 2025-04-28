@@ -34,6 +34,7 @@ class Game {
             }
         }
         printBoard(gameBoard);
+        scanner.close();
     }
 
     public static boolean checkWinner(char[][] gameBoard, char player) {
