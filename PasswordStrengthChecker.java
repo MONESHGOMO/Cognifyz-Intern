@@ -5,6 +5,7 @@ public class PasswordStrengthChecker {
 
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your password :");
+
         String password =input.nextLine();
 
         checkPassword(password);
